@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root{
+    --color-fover: #E7FBE6; /*valor global color fover (fover cambia el color del boton cuando se coloca la flecha) */
+    --funte-montserrat:"Montserrat", sans serif; /* tipo de letra global montserrat */
+    --funte-krona:"krona one", sans serif; /* tipo de letra global krona */
+}
+
+*{                                  /* */
+    
+    margin: 0;                     /* */
+    padding: 0;                   /* */
+    
+}
+
+body{
+    background-color: #000;
+}
+
+.saludo{
+    color: white;
+    .MUNDO{
+        color: aqua;
+    }
+
+    font-family: var(--funte-krona) ;
+    font-size: 5rem;
+    margin-top: 80px;
+    padding-left: 50px;
+
+}
+
+.parrafo{
+    color: white;
+    font-family: var(--funte-montserrat);
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: 800;
+    padding-left: 3rem;
+}
+
+.parrafo2{
+    color: white;
+    font-family: var(--funte-montserrat);
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: 800;
+    padding-left: 3rem;
+}
+
+
+.comenzar{
+    background: aqua;  /* color de fondo del boton encriptar */
+    width: 19%; /*ancho del boton encriptar */
+    padding: 21px 0; /* largo de boton encriptar*/
+    border-radius: 10px; /*borde de boton encrptar */
+    
+    font-size: 1.0rem;  /*tamalo de fuente de boton encriptar */
+    font-weight: 900;  /*grosor de texto en bton encriptar*/
+    margin-top: 5rem;  /* mueve hacia abajo y la izquierda elbton encriptar*/
+    margin-left: 5rem;
+  
+}
+
+.comenzar_text{
+    color: white; /* color de texto de btn encriptar*/
+    font-family: var(--funte-krona); /* tipo de letra de bton de encriptar */
+    font-size: large; /* tamaño de letra*/
+    font-weight: 999; /*grosor de letra*/
+    text-decoration: none; /* decoracion de texto*/
+
+}
+
+.footer{   /*footer de html (parte baja de la pagina) */
+    background-color:blue;   /*color de fondo del footer */
+    padding: 19px;    /*ancho entre texto footer */
+    margin-top: 290px;
+    display: flex;  /* alinea los contenidos del footer de forma horizontal */
+    justify-content: center; /*centra el contenido del footer al medio de la pantalla*/
+    font-family:var(--funte-montserrat); /*tipo de letra del texto en footer */
+    font-size: 1.5rem; /*tamaño del fuente de footer */
+    gap: 10px;  /*espacio entre elementos del footer */  
+    width: 100%; 
+    
+}
+
+/*estilo de texto footer */
+.texto_footer{  /*clase del texto en footer */
+    font-family:var(--funte-montserrat); /*tipo de letra de texto en footer */
+    font-weight: 400;  /*grosor de texto en footer */
+    color: white; /*color de texto del footer */
+    background: none;  /*color de fondo de texto en footer */
+}
+

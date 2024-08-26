@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>ENCRIPTADOR DE TEXTO</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo_alura" src="assets/imagenalura.png" alt="logo de alura latam">
+        <div><h1 class="titulo"></h1>ENCRIPTADOR DE TEXTO</div>
+    </header>
+    <main>
+        <section class="section1"> <!--seccion1-->
+
+            <!--cols: define el ancho del cuadro y rows: define el largo del cuadro textarea-->
+            <textarea class="text_area" id="texto" required cols="70"  rows="15" placeholder="ingresa el texto aqui"></textarea> 
+                <h6 class="informacion">(i) Solo letras minúsculas y sin caracteres especiales</h6>  <!--infomacion de caracteres y mayusculas-->
+
+            <div class="botones"> <!-- botones de escriptacion y descriptacion-->
+                <button class="encriptar" onclick="encriptar(); ">ENCRIPTAR</button>
+                <button class="desencriptar" onclick="desencriptar();"> DESENCRIPTAR</button>
+            </div>
+
+        </section>
+        <br>
+        <section class="seccion2"> <!--seccion2--> 
+            <!--cols: define el ancho del cuadro y rows: define el largo del cuadro textarea-->
+            <textarea class="mensaje" id="mensaje_resultado" readonly cols="20" rows="15" placeholder=""></textarea>
+            <div class="btn_copiar">
+                <button class="copiar" onclick="copiar();">COPIAR</button>
+            </div>
+            
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<br>
+<footer class="footer">
+    <p class="texto_footer">Desarollado por Leandris Meza Cassiani</p>
+    <a class="iconos_link" href="https://www.linkedin.com/in/leandrismezacassiani/">
+        <img class="iconos" src="assets/linkedin.png" alt="logo linkedin">
+    </a>
+    <a class="iconos_link" href="https://github.com/"> 
+        <img class="iconos" src="assets/github.png" alt="logo github">
+    </a>
+</footer>
+</html>

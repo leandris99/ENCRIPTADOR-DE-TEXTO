@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{                           /*se declara una variable goblal */                
+    --color-secun: #C9DABF;   /* valor global color */
+    --color-terciario: #9CA986; /*valor global color */
+    --color-fover: #E7FBE6; /*valor global color fover (fover cambia el color del boton cuando se coloca la flecha) */
+    --color-btn: transparent; /* color global de los botones trasparentes*/
+    --funte-montserrat:"Montserrat", sans serif; /* tipo de letra global montserrat */
+    --funte-krona:"krona one", sans serif; /* tipo de letra global krona */
+}
+
+*{                                  /* */
+    
+    margin: 0;                     /* */
+    padding: 0;                   /* */
+    
+}
+
+body{    /* cupor del html */
+    background: var(--color-secun); /* color de fondo del cuerpo html */
+    font-size: 3rem; /* ayuda a que body no se comprima  */
+    margin-top: 1.5%;  /* declara la medida entre el logo y el alto */
+
+
+
+ }
+
+.header{
+    display: flex;   /* alinia los elementos del header de forma horizontal */
+    gap: 500px;    /*separa los elemntos del header para que no quede uno al lado del otro*/
+    color: white; /*color del texto escrito en el header */
+    font-size: 3rem;   /*tamaño de fuente de texto escrito en el header */
+    font-family:var(--funte-montserrat); /*tipo de letra del texto en el header*/
+    font-weight: 900; /* gruego del texto escrito en el header*/
+}
+
+/* estilo logo alura*/
+.logo_alura{ /*clase logo de alura */
+    margin-top: 0; /* declara la medida entre el logo y el alto */
+    margin-left: 1.5%; /* declara la distacia a la izquierda del logo con el borde*/
+    width: 60.00px; /*ancho de la imagen */
+    height: 55.48px; /*largo de la imagen*/
+}
+
+/* estilo main*/
+main{     /* clase main iteractua con toda la interfas central*/
+    display: flex;    /*display flex alinia los elemnetos de forma horizontal */
+    margin-top: 40px;   /* separa los elementos del borde superior de la pantalla */ 
+    margin-left: 80px;   
+}
+
+
+/* estilo texarea*/
+.text_area{  /*clase textarea del section1*/
+    background-color:var(--color-secun);  /*color de fondo del cuadro texarea */
+    font-size: 2rem;  /*tamaño de fuente del texto que se escriba */
+    font-family: "inter";  /*fuente del texto que se escriba */
+    font-weight: 600;  /* grosor del tipo de letra*/
+    border: none;  /* quita borde de campo 1 */ 
+}
+.text_area:focus{
+    outline: none;
+}
+
+/* estilo mesaje*/
+.mensaje{  /* clase mensaje muestra el texto encriptado/desencriptado*/
+    border: none;    /* quita el borde del campo 2 */
+    text-transform:lowercase; /* transforma y muestra el texto encriptado/desencriptado en mayuscula*/
+    background-color: white; /*color de fondo donde se mostrara el mensaje */
+    border-radius: 15px; /*curbatura de campo mensaje */
+    font-family: "inter";  /*tipo de letra fuente en que se mostrara el texto encriptado/desencriptado */
+    font-size: 2rem; /*tamaño de fuente */
+    font-weight: 600;  /* grosor de texto  */
+    position: fixed;
+
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+/*estilo de placeholder */
+/*atributo placeholder: El atributo especifica una sugerencia breve que describe el valor esperado de un campo de entrada*/
+::placeholder{ font-family: var(--funte-krona); font-size: 2rem;} /*tipo de letra y tamaño del placeholder */
+
+   
+/*estilo clase informacion*/
+.informacion{  /*clase infomacion*/
+    font-family: var(--funte-montserrat); /* tipo de letra de informacion */
+    font-size: 1rem; /* tamaño de fuente de informacion*/
+    color: #000;  /*color de texto infomacion (i) */
+    /*margin-left: mueve el elemento hacia la izquierda de la pantalla, se puede graduar*/
+    margin-left: 0.5%; /*mueve el texto de informacion 0.5% a la izquierda */
+    
+}
+
+/*estilo clase encriptar*/
+.encriptar{  /* clase bton encriptar */
+    background: var(--color-btn);  /* color de fondo del boton encriptar */
+    width: 15%; /*ancho del boton encriptar */
+    padding: 21.5px 0; /* largo de boton encriptar*/
+    border-radius: 8px; /*borde de boton encrptar */
+    font-family: var(--funte-montserrat);  /* tipo de letra de bton de encriptar */
+    font-size: 1.0rem;  /*tamalo de fuente de boton encriptar */
+    font-weight: 600;  /*grosor de texto en bton encriptar*/
+    color: #000;  /* color de texto de btn encriptar*/
+    margin: 5px;  /* mueve hacia abajo y la izquierda elbton encriptar*/
+    
+}
+
+/* estilo hover escriptar */
+ .encriptar:hover{   /*hover cambia de color el btn encriptar cuando se le pas el fichero */
+    background-color: var(--color-fover); /* color que toma el btn cuando se le pasa el fichero */
+ }
+
+ /*estilo clase desencriptar */
+ .desencriptar{  /*clase btn desencripar */
+    background: var(--color-btn);  /*color de fondo del boton desencriptar */
+    width: 15%; /*ancho del boton desencriptar */
+    padding: 21.5px 0; /* ancho de boton desencriptar*/
+    border-radius: 8px; /*borde de boton desencriptar */
+    font-family: var(--funte-montserrat); /*/* tipo de letra de bton de desencriptar */
+    font-size: 1.0rem; /*tamaño de fuente de boton desencriptar*/
+    font-weight: 600; /*rosor de texto en bton desencriptar*/
+    color: #000; /*color de texto de btn desencriptar*/
+    margin: 5px; /*mueve hacia abajo y la izquierda el bton desencriptar*/
+
+ }
+
+ /*estilo hover desencriptar*/
+ .desencriptar:hover{   /*hover cambia de color el btn desencriptar cuando se le pasa el fichero*/
+    background-color: var(--color-fover);  /*color que toma el btn cuando se le pasa el fichero*/
+ }
+
+
+ /*estilo bton copiar*/
+ .copiar{  /*clase bton copiar*/
+    background: var(--color-btn); /*color del btn copiar*/;
+    width: 30%; /*ancho del boton copiar */
+    padding: 21.5px 0; /* largo de boton copiarr*/
+    border-radius: 8px; /*borde de boton copiar */
+    font-family: var(--funte-montserrat); /*tipo de letra del btn copiar*/
+    font-size: 1.0rem;  /* tamaño de fuente deñ btn copiar*/
+    font-weight: 600;  /*grosor de texto del boton copiar*/
+    color: #000;  /*color del texto del btn copiar*/
+    margin: 6px; /*nueve hacia abajo y la izquierda el btn copiar*/
+    margin: 130px; /*mueve hacia la izquierda el btn copiar(se puede mejorar)*/
+    margin-top: 186%;
+    
+ }
+
+ /* estilo hover  btn copiar*/
+ .copiar:hover{  /*hover cambia el color del btn copiar cuando se le pasa el fichero */
+    background-color: var(--color-fover); /*color que toma el btn cuando se le pass el fichero */
+ }
+
+ /*estilo del footer */
+.footer{   /*footer de html (parte baja de la pagina) */
+    background-color:var(--color-fover);   /*color de fondo del footer */
+    padding: 15px;    /*ancho entre texto footer */
+    
+    display: flex;  /* alinea los contenidos del footer de forma horizontal */
+    justify-content: center; /*centra el contenido del footer al medio de la pantalla*/
+    font-family:var(--funte-montserrat); /*tipo de letra del texto en footer */
+    font-size: 1.5rem; /*tamaño del fuente de footer */
+    gap: 10px;  /*espacio entre elementos del footer */
+    
+    
+}
+
+/*estilo de texto footer */
+.texto_footer{  /*clase del texto en footer */
+    font-family:var(--funte-montserrat); /*tipo de letra de texto en footer */
+    font-weight: 400;  /*grosor de texto en footer */
+    color: #000; /*color de texto del footer */
+    background: none;  /*color de fondo de texto en footer */
+}
+
